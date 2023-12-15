@@ -1,13 +1,14 @@
 from time import time
 
 
+n = 1_000_000_000
+
 def main():
-    n = 1_000_000_000
     start = time()
     print(f"\nCounting to {count(n):,}", end=" ")
     end = time() - start
 
-    print(f"Counting to took {end:.3f} seconds.\n")
+    print(f"took {end:.3f} seconds.\n")
 
 
 def count(i=0):
